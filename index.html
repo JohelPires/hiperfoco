@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>HiperFoco</title>
+</head>
+
+<body>
+<header>
+  <h1>HiperFoco</h1>
+  <a href="#">Sobre</a>
+  <a href="#">Configurações</a>
+</header>
+
+
+<div class="container">
+
+<div id="pomodoro" class="modulo">
+  <h3>Pomodoro timer</h3>
+  <h2>25:00</h2>
+</div>
+<div id="dia" class="modulo">
+  <div class="mod-header"><h3>Tarefas do dia</h3>
+  <p class="date">Terça, 10 de maio de 2022</p>
+</div>
+  <div class="lista">
+    <ul>
+      <li class="done">Finalizar layout do app <i class="fa-solid fa-check"></i></li>
+      <li>Outra coisa<div class="circle"></div></li>
+      <li>lavar a louça e arrumar a cozinha<div class="circle"></div></li>
+      <li>lavar a louça e arrumar a cozinha<div class="circle"></div></li>
+      <li>lavar a louça e arrumar a cozinha<div class="circle"></div></li>
+    </ul>
+  </div>
+  <div class="add-task">
+    <input class="texto" type="text" id="add-dia" placeholder="Adicione uma tarefa...">
+    <input class="botao" type="button" value="Adicionar">
+  </div>
+</div>
+<div id="semana" class="modulo">
+  <h3>Tarefas da semana</h3>
+  <ul><li>Finalizar layout</li></ul>
+  <ul><li>Outra coisa</li></ul>
+  <ul><li>Arrumar cozinha</li></ul>
+</div>
+
+<!-- <div id="mes" class="modulo">
+  <h3>Tarefas do mês:</h3>
+  <ul><li>Finalizar layout</li></ul>
+  <ul><li>Outra coisa</li></ul>
+  <ul><li>Arrumar cozinha</li></ul>
+</div> -->
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

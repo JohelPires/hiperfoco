@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"name": "50projects",
+			"path": "."
+		},
+		{
+			"name": "50projects1",
+			"path": "../50projects1"
+		},
+		{
+			"name": "50projects2",
+			"path": "../50projects2"
+		},
+		{
+			"name": "50projects3",
+			"path": "../50projects3"
+		},
+		{
+			"name": "50projects4",
+			"path": "../50projects4"
+		},
+		{
+			"name": "50projects5",
+			"path": "../50projects5"
+		},
+		{
+			"name": "50projects6",
+			"path": "../50projects6"
+		},
+		{
+			"name": "50projects7",
+			"path": "../50projects7"
+		},
+		{
+			"name": "50projects11",
+			"path": "../50projects11"
+		},
+		{
+			"name": "50projects12",
+			"path": "../50projects12"
+		},
+		{
+			"name": "50projects13",
+			"path": "../50projects13"
+		}
+	],
+	"settings": {}
+}

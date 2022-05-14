@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+$text-color: rgb(48, 48, 48, 0.8);
+$text-inactive: rgb(48, 48, 48, 0.4);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    height: 100vh;
+    // overflow: hidden;
+    margin: 0;
+    color: $text-color;
+    // background: linear-gradient(45deg, rgb(17, 61, 97), rgb(44, 76, 136));
+    
+    //BACKGROUND MUDA DE COR QUANDO O POMODORO ESTÁ ATIVO
+    background-color: rgb(112, 221, 112);
+    // background-color: rgb(255, 183, 49); 
+    padding: 0;
+    margin: 0;
+    // text-align: center;
+    
+}
+
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px auto;
+
+    grid-template-areas: "pomodoro pomodoro"
+                        "dia    semana";
+
+    grid-gap: 20px;
+
+
+    #pomodoro {
+        grid-area: pomodoro;
+        text-align: center;
+        h3 {
+            font-size: 22px;
+        }
+
+    }
+
+    .modulo {
+        // width: 200px;
+        max-height: 380px;
+        // padding: 0px 20px 0 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 7px;
+        box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.3), 
+                    0px 15px 15px rgb(0, 0, 0, 0.1);
+                    
+        overflow: hidden;
+
+        .mod-header {
+            margin-left: 20px;
+            margin-right: 20px;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+            h3 {
+                padding-top: 10px;
+                margin: 0;
+                // background-color: rgb(240, 240, 240);
+                text-align: center;
+                
+            }
+
+            .date {
+                font-size: 12px;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                padding-bottom: 10px;
+            }
+        }
+
+        .add-task {
+            // height: 50px;
+            text-align: center;
+            padding: 15px;
+            // margin-left: 20px;
+            // margin-right: 20px;
+            // border-top: 1px solid $text-inactive;
+            width: 100%;
+            // background-color: aqua;
+
+            input {
+                border: none;
+                border-radius: 3px;
+
+
+                &.texto {
+                    background-color: rgb(189, 189, 189);
+                    
+                }
+                &.botao {
+                    background-color: rgb(51, 156, 51);
+                    color:white;
+                }
+            }
+
+
+            
+        }
+            
+        .lista {
+            overflow-y:auto;
+            max-height: 150px;
+            margin-left: 20px;
+            ul {
+                padding: 0;
+                li {
+                    display: flex;
+                    gap: 20px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    margin-right: 10px;
+                    // align-items: center;
+                    justify-content: space-between;
+                    list-style: none;
+                    margin-bottom: 7px;
+
+                    &.done {
+                        color: $text-inactive;
+                        // text-decoration: line-through;
+                    }
+    
+                    .circle {
+                        border: 1px solid $text-color;
+                        margin-top: 3px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                   
+            
+                    }
+                    
+                }
+    
+            }
+        }
+
+
+    }
+}
